@@ -5,26 +5,14 @@ class LayoutColumn extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Container(
       alignment: Alignment.center,
-      child: new Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: new Stack(
+        alignment: Alignment.bottomCenter,
         children: <Widget>[
-          new Text("First Item",textDirection: TextDirection.ltr,),
-          new Text("Second Item",textDirection: TextDirection.ltr,),
-          new Text("Third Item",textDirection: TextDirection.ltr,),
-          new Text("Fourth Item",textDirection: TextDirection.ltr,),
-          new Container(
-            color: Colors.deepOrange.shade100,
-            alignment: Alignment.center,
-            child: new Text("Container data",textDirection: TextDirection.ltr,),
-          )
-
+          const Text("Hello there"),
+          const Text("Hey again")
         ],
       ),
-      // child: new Text(
-      //   "Hello World",
-      //   textDirection: TextDirection.ltr,
-      //   style: new TextStyle(color: Colors.red, fontWeight: FontWeight.w900,fontStyle: FontStyle.normal),
-      // ),
+ 
     );
   }
 }
