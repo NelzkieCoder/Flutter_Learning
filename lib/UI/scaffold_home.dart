@@ -22,6 +22,26 @@ class ScaffoldHome extends StatelessWidget {
           )
         ],
       ),
+      backgroundColor: Colors.grey.shade200,
+      body: Container(
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "Hello",
+              style: TextStyle(
+                  color: Colors.green,
+                  fontSize: 14.5,
+                  fontWeight: FontWeight.w400),
+            ),
+            InkWell(
+              child: Text("Button"),
+              onTap: () => debugPrint("Button is dfafds"),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
