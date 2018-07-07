@@ -38,9 +38,20 @@ class ScaffoldHome extends StatelessWidget {
             InkWell(
               child: Text("Button"),
               onTap: () => debugPrint("Button is dfafds"),
-            )
+            ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 1,
+        items: [
+          new BottomNavigationBarItem(
+              icon: Icon(Icons.add), title: Text("Hey")),
+          new BottomNavigationBarItem(
+              icon: Icon(Icons.print), title: Text("print")),
+          new BottomNavigationBarItem(
+              icon: Icon(Icons.print), title: Text("print")),
+        ],
       ),
     );
   }
